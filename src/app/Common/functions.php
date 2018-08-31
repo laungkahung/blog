@@ -12,7 +12,7 @@
 use Illuminate\Support\Facades\Storage;
 use Qiniu\Auth;
 
-const ARTICLE_DEFAULT_IMG = 'http://pe5ror07a.bkt.clouddn.com/u=1225755787,4116303512&fm=27&gp=0.jpg';//文章默认图片显示路径
+const ARTICLE_DEFAULT_IMG = 'http://pe5ror07a.bkt.clouddn.com/article.png';//文章默认图片显示路径
 
 
 /**

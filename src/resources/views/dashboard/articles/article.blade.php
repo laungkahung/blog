@@ -53,7 +53,7 @@
                     <input type="file" name="thumb" class="form-control" id="thumb" hidden>
                     <input name="has_thumb" class="form-control" value="{{ isset($article['has_thumb'])?$article['has_thumb']:'' }}" hidden>
                     <div class="pt-1 thumbnail">
-                        <img src="{{ isset($article['thumb'])?$article['thumb']:asset('bootstrapdashboard/favicon.ico') }}"
+                        <img src="{{ isset($article['thumb'])?$article['thumb']:asset('bootstrapdashboard/article.png') }}"
                              id="imgThumb" width="100%">
                     </div>
                 </div>
