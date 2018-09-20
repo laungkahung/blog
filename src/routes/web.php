@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return redirect('/home');
+//});
 
 Auth::routes();
 
@@ -35,3 +35,8 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Dashboard', 'prefix' => 'd
     });
 
 });
+
+Route::group(['namespace' => 'Home', 'prefix' => '', 'as' => 'home::'], function () {
+    Route::any('/', 'IndexController@index');
+});
+//Route::get('/home', 'HomeController@index')->name('home');

@@ -15,18 +15,19 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    {{--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">--}}
+{{--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">--}}
 
-    <!-- Styles -->
+<!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <link href="{{ asset('css/laravel.css') }}" rel="stylesheet">
 </head>
 <body>
+@include('home.home_header')
 <div id="app">
-    @include('layouts.header')
-    <main class="py-4">
+    <main class="py-4 md:h-header container mx-auto px-6 md:px-0 py-6 flex flex-col md:flex-row items-center">
         @yield('content')
     </main>
 </div>
+@yield('script')
 </body>
 </html>

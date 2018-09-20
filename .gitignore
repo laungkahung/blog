@@ -6,3 +6,8 @@ Homestead.json
 Homestead.yaml
 .env
 composer.lock
+.vscode/launch.json
+.gitignore
+.vscode/settings.json
+src/composer.json
+src/app/Libraries/image-php-sdk-v2.0/README.md

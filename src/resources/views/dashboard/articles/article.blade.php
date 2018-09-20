@@ -135,29 +135,8 @@
         function ajaxSubmitForm() {
             // var params = $("#formId").serialize();
             let params = new FormData($("#formId")[0]);
-            $.ajax({
-                type: "POST",
-                url: "/dashboard/article/create",
-                data: params,
-                dataType: "json",
-                contentType: false,
-                processData: false,
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                },
-                success: function (res) {
-                    if (res.code > 0) {
-                        toastr.warning(res.msg);
-                    } else {
-                        toastr.success(res.msg);
-                        let goto = "{{url('dashboard/article')}}";
-                        reSetTimeOut(500,goto);
-                    }
-                },
-                error: function () {
-                    toastr.error('服务器错误，请稍后重试');
-                }
-            });
+            let url    = "/dashboard/article/create";
+            post(url, params);
         }
     </script>
 @endsection
