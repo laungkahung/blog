@@ -18,13 +18,16 @@
 {{--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">--}}
 
 <!-- Styles -->
+
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/laravel.css') }}" rel="stylesheet">
+
+    @yield('style')
 </head>
 <body>
 @include('home.home_header')
 <div id="app">
-    <main class="py-4 md:h-header container mx-auto px-6 md:px-0 py-6 flex flex-col md:flex-row items-center">
+    <main class="container pt-1 pl-0 pr-0">
         @yield('content')
     </main>
 </div>

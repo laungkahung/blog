@@ -65,9 +65,19 @@ class Article extends Base
         return $data;
     }
 
-    public static function getList($limit)
+    public static function getList($limit = 15)
     {
         return self::orderBy('id','desc')->paginate($limit);
+    }
+
+    /**
+     * @param string $fields
+     * @param int $limit
+     * @return mixed
+     */
+    public static function getListByFields($fields = '*', $limit = 15)
+    {
+        return self::orderBy('id','desc')->select($fields)->paginate($limit);
     }
 
 }

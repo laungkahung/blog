@@ -1,0 +1,36 @@
+.table td {
+    position: relative;
+}
+
+.imgWrap {
+    float: right;
+    height: 100%;
+    border: solid 1px #666;
+    margin: 10px 10px 0 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+
+.imgWrap a {
+    display: block;
+    height: 100%;
+    background: #ffa url(../images/line-graphic-on-checkered-background.png) repeat center;
+}
+
+.imgWrap a:hover {
+    background-color: green;
+}
+
+.imgWrap span {
+    display: inline-block; /*将行内元素改变为行内块元素显示*/
+    width: 1px; /*实现ＩＥ下可读效果*/
+    height: 100%; /*使用元素高度和图片容器高度一样*/
+    vertical-align: middle; /*垂直对齐*/
+}
+
+.imgWrap img {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+}

@@ -10,11 +10,13 @@
 namespace App\Http\Controllers\Home;
 
 
+use App\Logic\Dashboard\ArticleLogic;
+
 class IndexController extends BaseController
 {
     public function index()
     {
-        $i = 1;
-        return view('home.index');
+        $article_list = ArticleLogic::getListByFields(['title','thumb','excerpt']);
+        return view('home.index', ['article_list' => $article_list]);
     }
 }
