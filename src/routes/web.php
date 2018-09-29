@@ -38,5 +38,6 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Dashboard', 'prefix' => 'd
 
 Route::group(['namespace' => 'Home', 'prefix' => '', 'as' => 'home::'], function () {
     Route::any('/', 'IndexController@index');
+    Route::any('/detail/{id}', 'IndexController@detail');
 });
 //Route::get('/home', 'HomeController@index')->name('home');

@@ -19,4 +19,9 @@ class IndexController extends BaseController
         $article_list = ArticleLogic::getListByFields(['title','thumb','excerpt']);
         return view('home.index', ['article_list' => $article_list]);
     }
+
+    public function detail($id)
+    {
+        return view('home.detail');
+    }
 }
