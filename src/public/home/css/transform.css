@@ -5,7 +5,7 @@
 /*}*/
 
 .autorenew{
-    animation: spin 1s linear;
+    animation: spin 500ms linear;
 }
 @keyframes spin{
     to {

@@ -230,7 +230,7 @@
                 img.addClass('autorenew');
                 setTimeout(function(){
                     img.removeClass('autorenew');
-                },1001);
+                },500);
             }
 
         }
