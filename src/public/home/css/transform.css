@@ -1,0 +1,57 @@
+/*span.autorenew {*/
+    /*animation: hovertreerotate 2s linear infinite;*/
+    /*-webkit-animation: hovertreerotate 2s linear infinite; !*Safari and Chrome*!*/
+    /*margin: 2px;*/
+/*}*/
+
+.autorenew{
+    animation: spin 1s linear;
+}
+@keyframes spin{
+    to {
+        transform: rotate(1turn);
+        -ms-transform:rotate(1turn); /* IE 9 */
+        -moz-transform:rotate(1turn); /* Firefox */
+        -webkit-transform:rotate(1turn); /* Safari 和 Chrome */
+        -o-transform:rotate(1turn); /* Opera */
+    }
+}
+
+
+@keyframes hovertreerotate {
+    from {
+        transform: rotate(0deg);
+        -ms-transform:rotate(0deg); /* IE 9 */
+        -moz-transform:rotate(0deg); /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg); /* Opera */
+    }
+
+
+    to {
+        transform: rotate(1080deg);
+        -ms-transform:rotate(1080deg); /* IE 9 */
+        -moz-transform:rotate(1080deg); /* Firefox */
+        -webkit-transform:rotate(1080deg); /* Safari 和 Chrome */
+        -o-transform:rotate(1080deg); /* Opera */
+    }
+}
+
+@-webkit-keyframes hovertreerotate /*Safari and Chrome*/
+{
+    from {
+        transform: rotate(0deg);
+        -ms-transform:rotate(0deg); /* IE 9 */
+        -moz-transform:rotate(0deg); /* Firefox */
+        -webkit-transform:rotate(0deg); /* Safari 和 Chrome */
+        -o-transform:rotate(0deg); /* Opera */
+    }
+
+    to {
+        transform: rotate(720deg);
+        -ms-transform:rotate(720deg); /* IE 9 */
+        -moz-transform:rotate(720deg); /* Firefox */
+        -webkit-transform:rotate(720deg); /* Safari 和 Chrome */
+        -o-transform:rotate(720deg); /* Opera */
+    }
+}

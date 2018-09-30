@@ -1825,6 +1825,18 @@ body.reader-night-mode #serial-story-show .aside .share i {
     font-size: 14px;
 }
 
+.top .recommended-change-btn a:hover {
+    color: #787878;
+}
+
+.top .recommended-change-btn img {
+    color: #969696;
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+
+
 .side-list li {
     padding: 5px 0;
     height: 36px;

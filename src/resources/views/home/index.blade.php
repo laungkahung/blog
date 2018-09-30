@@ -1,6 +1,9 @@
 @extends('home.home_app')
 @section('style')
     <link href="{{ asset('home/css/index.css') }}" rel="stylesheet">
+{{--    <link href="{{ asset('bootstrap-3.3.7-dist/css/bootstrap.css') }}" rel="stylesheet">--}}
+    <link href="{{ asset('icomoon/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('home/css/transform.css') }}" rel="stylesheet">
 @endsection
 @section('content')
     <div class="row">
@@ -15,9 +18,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/4e38b09fd43b">倪叔think</a>
-                            <a target="_blank" href="/p/0ec5f4061fa6#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a><span><i class="iconfont ic-list-like"></i> 0</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <i class="icon-iccoment"></i> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -34,9 +38,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/599bcbf0439f">刘旷</a>
-                            <a target="_blank" href="/p/7b413a79421f#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 1</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -50,9 +55,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/7ec84bc867ff">小清新的春天</a>
-                            <a target="_blank" href="/p/53b2f36f20c9#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 3</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -69,9 +75,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/4b141bc409f4">区势传媒</a>
-                            <a target="_blank" href="/p/898e2d7a4748#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 1</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -87,9 +94,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/1178cd572b92">拓天姬</a>
-                            <a target="_blank" href="/p/e50f2a7b3acf#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 0</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -105,9 +113,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/497cf9a1dfff">地气财经</a>
-                            <a target="_blank" href="/p/cca747aa4933#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 0</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -124,9 +133,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/979aad4ea1f4">兰哥2018</a>
-                            <a target="_blank" href="/p/22ac122e66eb#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 0</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -143,9 +153,10 @@
                         </p>
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/0c8ce0c936e6">Sophia的玲珑阁</a>
-                            <a target="_blank" href="/p/1ef9ea9b5495#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 0</span>
+                            <a target="_blank" href="/p/e15f5a27bba6#comments">
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -163,8 +174,9 @@
                         <div class="meta">
                             <a class="nickname" target="_blank" href="/u/f76711c26dea">增长笔记</a>
                             <a target="_blank" href="/p/e15f5a27bba6#comments">
-                                <i class="iconfont ic-list-comments"></i> 0
-                            </a>      <span><i class="iconfont ic-list-like"></i> 1</span>
+                                <span class="icon-iccoment"></span> 0
+                            </a>
+                            <span><i class="icon-xiangqu"></i> 1</span>
                         </div>
                     </div>
                 </li>
@@ -194,7 +206,9 @@
             <div class="recommended-article ml-3">
                 <div class="top">
                     <span class="title">推荐文章</span>
-                    <span class="recommended-change-btn float-right"><a><i class="change-icon"></i>换一批</a></span>
+                    <span class="recommended-change-btn float-right">
+                        <a class="refresh" onclick="refresh()"><img src="{{ asset('icomoon/svg/refresh.svg') }}" id="autorenew" class=""/>换一批</a>
+                    </span>
                 </div>
                 <ul class="side-list">
                     <li><i>1</i><a href="" target="_blank">123</a></li>
@@ -204,4 +218,21 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script>
+        var page = 1;
+        function refresh(){
+            var img = $('.refresh img');
+            if (!img.hasClass('autorenew'))
+            {
+                img.addClass('autorenew');
+                setTimeout(function(){
+                    img.removeClass('autorenew');
+                },1001);
+            }
+
+        }
+    </script>
 @endsection
