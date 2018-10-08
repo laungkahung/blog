@@ -232,6 +232,13 @@
                     img.removeClass('autorenew');
                 },500);
             }
+        }
+
+        function articleList(){
+
+        }
+
+        function recommendList(){
 
         }
     </script>

@@ -23,7 +23,7 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Dashboard', 'prefix' => 'd
     Route::get('/', 'IndexController@index'); // 首页
 
     Route::group(['prefix' => 'article'], function (){
-        Route::get('/', 'ArticleController@index'); // article_list
+        Route::get('/', 'ArticleController@index'); //
         Route::get('/add', 'ArticleController@editOrAdd'); //
         Route::get('/edit/{id}', 'ArticleController@editOrAdd'); //
         Route::post('/create', 'ArticleController@postUpdateOrCreate'); //
@@ -38,6 +38,8 @@ Route::group(['middleware' => 'auth', 'namespace' => 'Dashboard', 'prefix' => 'd
 
 Route::group(['namespace' => 'Home', 'prefix' => '', 'as' => 'home::'], function () {
     Route::any('/', 'IndexController@index');
+    Route::post('/list', 'ArticleController@articleList'); // article_list
+    Route::post('/recommend', 'ArticleController@articleList'); // recommend_list
     Route::any('/detail/{id}', 'IndexController@detail');
 });
 //Route::get('/home', 'HomeController@index')->name('home');

@@ -22,4 +22,6 @@ Route::Group(['namespace' => 'Api',],function (){
     Route::get('/', 'IndexController@index');
     Route::post('/foo', 'IndexController@foo');
     Route::get('/too', 'IndexController@too');
+    Route::get('/login', 'AuthController@login');
+
 });
